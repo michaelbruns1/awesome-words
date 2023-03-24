@@ -1,16 +1,43 @@
 {
-  "name": "nodejs",
+  "name": "awesome-words",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "This package is going to filter out some awesome words",
+  "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/michaelbruns1/awesome-words.git"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest ",
+    "test:watch": "npm test -- --watch"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "awesome",
+    "words"
+  ],
+  "author": "Michael Bruns (https://michaelbruns.one)",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelbruns/awesome-words/issues"
+  },
+  "homepage": "https://github.com/michaelbruns/awesome-words#readme",
   "dependencies": {
     "@types/node": "^18.0.6",
     "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^29.5.0",
+    "watch": "^1.0.2"
   }
 }
