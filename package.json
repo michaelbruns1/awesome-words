@@ -1,6 +1,6 @@
 {
   "name": "@michaelbruns1/awesome-words",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "This package is going to filter out some awesome words",
   "main": "build/index.js",
   "repository": {
