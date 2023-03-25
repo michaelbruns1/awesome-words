@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/michaelbruns1/awesome-words.git"
+    "url": "https://github.com/michaelbruns1/awesome-words.git"
   },
   "scripts": {
     "dev": "watch 'npm run build' src",
